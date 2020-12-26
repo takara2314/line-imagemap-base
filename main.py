@@ -23,13 +23,13 @@ def takaranImage(image_name, resolution):
             # https://example.com/image/takaran/240 にアクセスすれば画像が表示される
             return send_file(img_url+"240.png", mimetype="image/png")
         elif resolution == 300:
-            return send_file(img_url+"240.png", mimetype="image/png")
+            return send_file(img_url+"300.png", mimetype="image/png")
         elif resolution == 460:
-            return send_file(img_url+"240.png", mimetype="image/png")
+            return send_file(img_url+"460.png", mimetype="image/png")
         elif resolution == 700:
-            return send_file(img_url+"240.png", mimetype="image/png")
+            return send_file(img_url+"700.png", mimetype="image/png")
         elif resolution == 1040:
-            return send_file(img_url+"240.png", mimetype="image/png")
+            return send_file(img_url+"1040.png", mimetype="image/png")
         else:
             # ファイルが見つからなかったら、「404 Not Found」という文字列と、
             # 404というファイルが見つからなかったということを示すコードを送る (HTTP Status Code)
